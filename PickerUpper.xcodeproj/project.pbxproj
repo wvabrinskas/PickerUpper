@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91950C002703F35D004541C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91950BFF2703F35D004541C0 /* Assets.xcassets */; };
+		91950C062703F35D004541C0 /* PickerUpper MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 91950C052703F35D004541C0 /* PickerUpper MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		91950C0B2703F35D004541C0 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91950C0A2703F35D004541C0 /* Messages.framework */; };
+		91950C0E2703F35D004541C0 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91950C0D2703F35D004541C0 /* MessagesViewController.swift */; };
+		91950C112703F35D004541C0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91950C0F2703F35D004541C0 /* MainInterface.storyboard */; };
+		91950C132703F35E004541C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91950C122703F35E004541C0 /* Assets.xcassets */; };
+		91950C222703F4EB004541C0 /* StateCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91950C212703F4EB004541C0 /* StateCoordinator.swift */; };
+		91950C252703F5F8004541C0 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91950C242703F5F8004541C0 /* Module.swift */; };
+		91950C272703F613004541C0 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91950C262703F613004541C0 /* Subscription.swift */; };
+		91950C2A2703F66C004541C0 /* PhraseSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91950C292703F66C004541C0 /* PhraseSubscription.swift */; };
+		91950C2C2703F673004541C0 /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91950C2B2703F673004541C0 /* Phrase.swift */; };
+		91950C2F2703F6ED004541C0 /* PhraseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91950C2E2703F6ED004541C0 /* PhraseModule.swift */; };
+		91950C3427040A52004541C0 /* RoundedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91950C3327040A52004541C0 /* RoundedButtonView.swift */; };
+		91950C3627040A68004541C0 /* RoundedButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91950C3527040A68004541C0 /* RoundedButtonViewModel.swift */; };
+		91950C3827040F68004541C0 /* PhraseDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91950C3727040F68004541C0 /* PhraseDB.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91950C072703F35D004541C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91950BF62703F35C004541C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91950C042703F35D004541C0;
+			remoteInfo = "PickerUpper MessagesExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		91950C1A2703F35E004541C0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				91950C062703F35D004541C0 /* PickerUpper MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		91950BFC2703F35C004541C0 /* PickerUpper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerUpper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91950BFF2703F35D004541C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91950C052703F35D004541C0 /* PickerUpper MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PickerUpper MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91950C0A2703F35D004541C0 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		91950C0D2703F35D004541C0 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		91950C102703F35D004541C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		91950C122703F35E004541C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91950C142703F35E004541C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91950C212703F4EB004541C0 /* StateCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCoordinator.swift; sourceTree = "<group>"; };
+		91950C242703F5F8004541C0 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		91950C262703F613004541C0 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		91950C292703F66C004541C0 /* PhraseSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseSubscription.swift; sourceTree = "<group>"; };
+		91950C2B2703F673004541C0 /* Phrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phrase.swift; sourceTree = "<group>"; };
+		91950C2E2703F6ED004541C0 /* PhraseModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseModule.swift; sourceTree = "<group>"; };
+		91950C3327040A52004541C0 /* RoundedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonView.swift; sourceTree = "<group>"; };
+		91950C3527040A68004541C0 /* RoundedButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonViewModel.swift; sourceTree = "<group>"; };
+		91950C3727040F68004541C0 /* PhraseDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseDB.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91950C022703F35D004541C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91950C0B2703F35D004541C0 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91950BF52703F35C004541C0 = {
+			isa = PBXGroup;
+			children = (
+				91950BFE2703F35C004541C0 /* PickerUpper */,
+				91950C0C2703F35D004541C0 /* PickerUpper MessagesExtension */,
+				91950C092703F35D004541C0 /* Frameworks */,
+				91950BFD2703F35C004541C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91950BFD2703F35C004541C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91950BFC2703F35C004541C0 /* PickerUpper.app */,
+				91950C052703F35D004541C0 /* PickerUpper MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91950BFE2703F35C004541C0 /* PickerUpper */ = {
+			isa = PBXGroup;
+			children = (
+				91950BFF2703F35D004541C0 /* Assets.xcassets */,
+			);
+			path = PickerUpper;
+			sourceTree = "<group>";
+		};
+		91950C092703F35D004541C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91950C0A2703F35D004541C0 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91950C0C2703F35D004541C0 /* PickerUpper MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				91950C3227040A42004541C0 /* ViewModels */,
+				91950C3127040A3B004541C0 /* Views */,
+				91950C302703F868004541C0 /* Models */,
+				91950C2D2703F6E1004541C0 /* Modules */,
+				91950C282703F654004541C0 /* Subscriptions */,
+				91950C202703F4D7004541C0 /* Coordinators */,
+				91950C0D2703F35D004541C0 /* MessagesViewController.swift */,
+				91950C0F2703F35D004541C0 /* MainInterface.storyboard */,
+				91950C122703F35E004541C0 /* Assets.xcassets */,
+				91950C142703F35E004541C0 /* Info.plist */,
+				91950C262703F613004541C0 /* Subscription.swift */,
+				91950C242703F5F8004541C0 /* Module.swift */,
+			);
+			path = "PickerUpper MessagesExtension";
+			sourceTree = "<group>";
+		};
+		91950C202703F4D7004541C0 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				91950C212703F4EB004541C0 /* StateCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		91950C282703F654004541C0 /* Subscriptions */ = {
+			isa = PBXGroup;
+			children = (
+				91950C292703F66C004541C0 /* PhraseSubscription.swift */,
+			);
+			path = Subscriptions;
+			sourceTree = "<group>";
+		};
+		91950C2D2703F6E1004541C0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				91950C3727040F68004541C0 /* PhraseDB.swift */,
+				91950C2E2703F6ED004541C0 /* PhraseModule.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		91950C302703F868004541C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91950C2B2703F673004541C0 /* Phrase.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		91950C3127040A3B004541C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91950C3327040A52004541C0 /* RoundedButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		91950C3227040A42004541C0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				91950C3527040A68004541C0 /* RoundedButtonViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91950BFB2703F35C004541C0 /* PickerUpper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91950C1B2703F35E004541C0 /* Build configuration list for PBXNativeTarget "PickerUpper" */;
+			buildPhases = (
+				91950BFA2703F35C004541C0 /* Resources */,
+				91950C1A2703F35E004541C0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91950C082703F35D004541C0 /* PBXTargetDependency */,
+			);
+			name = PickerUpper;
+			packageProductDependencies = (
+			);
+			productName = PickerUpper;
+			productReference = 91950BFC2703F35C004541C0 /* PickerUpper.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		91950C042703F35D004541C0 /* PickerUpper MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91950C172703F35E004541C0 /* Build configuration list for PBXNativeTarget "PickerUpper MessagesExtension" */;
+			buildPhases = (
+				91950C012703F35D004541C0 /* Sources */,
+				91950C022703F35D004541C0 /* Frameworks */,
+				91950C032703F35D004541C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PickerUpper MessagesExtension";
+			productName = "PickerUpper MessagesExtension";
+			productReference = 91950C052703F35D004541C0 /* PickerUpper MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91950BF62703F35C004541C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					91950BFB2703F35C004541C0 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					91950C042703F35D004541C0 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 91950BF92703F35C004541C0 /* Build configuration list for PBXProject "PickerUpper" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91950BF52703F35C004541C0;
+			packageReferences = (
+			);
+			productRefGroup = 91950BFD2703F35C004541C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91950BFB2703F35C004541C0 /* PickerUpper */,
+				91950C042703F35D004541C0 /* PickerUpper MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91950BFA2703F35C004541C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91950C002703F35D004541C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91950C032703F35D004541C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91950C132703F35E004541C0 /* Assets.xcassets in Resources */,
+				91950C112703F35D004541C0 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91950C012703F35D004541C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91950C222703F4EB004541C0 /* StateCoordinator.swift in Sources */,
+				91950C2A2703F66C004541C0 /* PhraseSubscription.swift in Sources */,
+				91950C3427040A52004541C0 /* RoundedButtonView.swift in Sources */,
+				91950C0E2703F35D004541C0 /* MessagesViewController.swift in Sources */,
+				91950C3827040F68004541C0 /* PhraseDB.swift in Sources */,
+				91950C2C2703F673004541C0 /* Phrase.swift in Sources */,
+				91950C272703F613004541C0 /* Subscription.swift in Sources */,
+				91950C2F2703F6ED004541C0 /* PhraseModule.swift in Sources */,
+				91950C252703F5F8004541C0 /* Module.swift in Sources */,
+				91950C3627040A68004541C0 /* RoundedButtonViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91950C082703F35D004541C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91950C042703F35D004541C0 /* PickerUpper MessagesExtension */;
+			targetProxy = 91950C072703F35D004541C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91950C0F2703F35D004541C0 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91950C102703F35D004541C0 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91950C152703F35E004541C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		91950C162703F35E004541C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91950C182703F35E004541C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24H8222GR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PickerUpper MessagesExtension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = PickerUpper;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamvabrinskas.PickerUpper.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91950C192703F35E004541C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24H8222GR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PickerUpper MessagesExtension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = PickerUpper;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamvabrinskas.PickerUpper.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		91950C1C2703F35E004541C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24H8222GR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamvabrinskas.PickerUpper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91950C1D2703F35E004541C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24H8222GR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamvabrinskas.PickerUpper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91950BF92703F35C004541C0 /* Build configuration list for PBXProject "PickerUpper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91950C152703F35E004541C0 /* Debug */,
+				91950C162703F35E004541C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91950C172703F35E004541C0 /* Build configuration list for PBXNativeTarget "PickerUpper MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91950C182703F35E004541C0 /* Debug */,
+				91950C192703F35E004541C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91950C1B2703F35E004541C0 /* Build configuration list for PBXNativeTarget "PickerUpper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91950C1C2703F35E004541C0 /* Debug */,
+				91950C1D2703F35E004541C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91950BF62703F35C004541C0 /* Project object */;
+}
