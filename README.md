@@ -8,6 +8,8 @@
 
 Open source simple to use iMessage Extension to generate sweet pickup lines. Never be lonely again. 
 
+[<img width="250" src="images/store.png">](https://apps.apple.com/us/app/pickerupper/id1588018217)
+
 |  |  |
 | ------------- | ------------- |
 | <img width="250" src="images/iphone1.png">   | <img width="250" src="images/iphone2.png">  ||
