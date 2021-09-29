@@ -22,6 +22,7 @@
 		91950C3427040A52004541C0 /* RoundedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91950C3327040A52004541C0 /* RoundedButtonView.swift */; };
 		91950C3627040A68004541C0 /* RoundedButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91950C3527040A68004541C0 /* RoundedButtonViewModel.swift */; };
 		91950C3827040F68004541C0 /* PhraseDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91950C3727040F68004541C0 /* PhraseDB.swift */; };
+		91A1D90D2704BF610097B7D0 /* Error+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A1D90C2704BF610097B7D0 /* Error+ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		91950C3327040A52004541C0 /* RoundedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonView.swift; sourceTree = "<group>"; };
 		91950C3527040A68004541C0 /* RoundedButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonViewModel.swift; sourceTree = "<group>"; };
 		91950C3727040F68004541C0 /* PhraseDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseDB.swift; sourceTree = "<group>"; };
+		91A1D90C2704BF610097B7D0 /* Error+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		91950C0C2703F35D004541C0 /* PickerUpper MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				91950C392704BF34004541C0 /* Extensions */,
 				91950C3227040A42004541C0 /* ViewModels */,
 				91950C3127040A3B004541C0 /* Views */,
 				91950C302703F868004541C0 /* Models */,
@@ -181,6 +184,14 @@
 				91950C3527040A68004541C0 /* RoundedButtonViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		91950C392704BF34004541C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				91A1D90C2704BF610097B7D0 /* Error+ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				91950C222703F4EB004541C0 /* StateCoordinator.swift in Sources */,
 				91950C2A2703F66C004541C0 /* PhraseSubscription.swift in Sources */,
 				91950C3427040A52004541C0 /* RoundedButtonView.swift in Sources */,
+				91A1D90D2704BF610097B7D0 /* Error+ext.swift in Sources */,
 				91950C0E2703F35D004541C0 /* MessagesViewController.swift in Sources */,
 				91950C3827040F68004541C0 /* PhraseDB.swift in Sources */,
 				91950C2C2703F673004541C0 /* Phrase.swift in Sources */,
