@@ -8,9 +8,9 @@
 
 Open source simple to use iMessage Extension to generate sweet pickup lines. Never be lonely again. 
 
-<img width="250" src="images/iphone1.png">
-<img width="250" src="images/iphone2.png">
-
+|  |  |
+| ------------- | ------------- |
+| <img width="250" src="images/iphone1.png">   | <img width="250" src="images/iphone2.png">  ||
 
 ## One stream
 Built in about 3 hours on stream! You can follow [here](https://twitch.tv/billbuildsyt) 
